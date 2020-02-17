@@ -1,0 +1,30 @@
+{
+  "name": "ts-node-jasmine",
+  "description": "",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "tsc --watch",
+    "test-server": "tsc --watch & nodemon --inspect --watch dist",
+    "test": "./node_modules/.bin/jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Todai88/ts-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^3.5.4",
+    "@types/node": "^13.7.1",
+    "jasmine": "^3.5.0",
+    "jasmine-ts-console-reporter": "^3.1.1",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "jasmine-reporters": "^2.3.2"
+  }
+}
