@@ -7,11 +7,13 @@
     "test-server": "tsc --watch & nodemon --inspect --watch dist",
     "test": "./node_modules/.bin/jasmine",
     "lint": "tslint --project tsconfig.json",
+    "prettier:base": "./node_modules/.bin/prettier --parser typescript --single-quote",
     "prettier:write": "npm run prettier:base -- --write \"src/**/*.{ts,tsx}\""
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier:write"
+      "pre-commit": "npm run prettier:write && ./node_modules/.bin/typescript/tsc && npm run test"
+    }
   },
   "repository": {
     "type": "git",
