@@ -37,6 +37,6 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "jasmine-reporters": "^2.3.2"
+    "jasmine-reporters": "^2.5.0"
   }
 }
